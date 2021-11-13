@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     * {
+        background: var(---darkBlue);
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }

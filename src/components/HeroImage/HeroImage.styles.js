@@ -6,11 +6,10 @@ export const Wrapper = styled.div`
       rgba(0, 0, 0, 0) 41%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url(${({ image }) => image}), var(--darkGrey);
+    url(${({ image }) => image}), var(--darkBlue);
   background-size: 100%, cover;
   background-position: center;
   height: 600px;
-  padding: 50px 50px;
   position: relative;
   animation: animateHeroImage 0.5s;
 
@@ -40,6 +39,7 @@ export const Text = styled.div`
   color: var(--white);
 
   h1 {
+    font-family: "Abel", sans-serif;
     font-size: var(--fontSuperBig);
 
     @media screen and (max-width: 720px) {
@@ -48,6 +48,7 @@ export const Text = styled.div`
   }
 
   p {
+    font-family: "Abel", sans-serif;
     font-size: var(--fontMed);
 
     @media screen and (max-width: 720px) {

@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <>
             <Helmet>
-                <title>Ei löytynyt - React Movie Database</title>
+                <title>Ei löytynyt - Teeveet</title>
             </Helmet>
             <div>
                 Ei löytynyt ☹.

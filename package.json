@@ -1,6 +1,6 @@
 {
   "name": "teeveet-client",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
@@ -8,13 +8,12 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.5.3",
     "firebase": "^8.7.1",
-    "hls.js": "^1.0.12",
-    "plyr": "^3.6.9",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",

@@ -7,7 +7,7 @@ import { Image } from './Thumb.styles';
 const Thumb = ({ name, liveUrl, image, clickable, text }) => (
   <div>
     {clickable ? (
-      <Link to={`/play-channel?name=${name}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}`}>
+      <Link to={`/katso-kanavaa?name=${name}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}`}>
         <Image src={image} alt='channel-thumb' style={{ borderRadius: "16px" }} />
       </Link>
     ) : (

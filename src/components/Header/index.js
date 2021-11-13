@@ -17,12 +17,12 @@ const Header = () => {
           />
         </Link>
         {currentUser ? (
-          <Link to={`/account`}>
-            <span>Jesun Maailma -tilisi</span>
+          <Link to={`/profiili`}>
+            <span>Profiili</span>
           </Link>
         ) : (
-          <Link to="/login">
-            <span>Kirjaudu tai rekisteröidy</span>
+          <Link to="/kirjaudu">
+            <span>Kirjaudu</span>
           </Link>
         )}
       </Content>

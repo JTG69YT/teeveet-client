@@ -13,7 +13,12 @@ const Home = () => {
 
   if (loading) {
     return (
-      <Spinner />
+      <>
+          <Helmet>
+              <title>Ladataan...</title>
+          </Helmet>
+          <Spinner />
+      </>
     )
   }
   if (error) return <div>Jotain meni pieleen...</div>;

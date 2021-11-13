@@ -53,7 +53,7 @@ export default function Login() {
             </Button>
           </Form>
           <div className="w-100 text-center mt-2">
-            <Link to="/signup" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
+            <Link to="/rekisteroidy" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
           </div>
         </Card.Body>
       </Card>

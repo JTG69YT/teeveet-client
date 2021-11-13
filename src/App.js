@@ -21,10 +21,10 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <PrivateRoute exact path="/play-channel" component={Channel} />
-        <PrivateRoute exact path="/account" component={Dashboard} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Register} />
+        <PrivateRoute exact path="/katso-kanavaa" component={Channel} />
+        <PrivateRoute exact path="/profiili" component={Dashboard} />
+        <Route exact path="/kirjaudu" component={Login} />
+        <Route exact path="/rekisteroidy" component={Register} />
         <Route exact path="/*" component={NotFound} />
       </Switch>
       <Footer />

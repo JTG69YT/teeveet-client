@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: var(--darkBlue);
-  padding: 20px 20px;
+  padding: 20px 0;
 `;
 
 export const Content = styled.div`
@@ -40,31 +40,11 @@ export const Content = styled.div`
 `;
 
 export const LogoImg = styled.img`
-  margin-left: 16px;
-  width: 130px;
+  margin-left: 8px;
+  width: 128px;
 
   @media screen and (max-width: 600px) {
-    margin-left: 2px;
-    width: 128px;
+    margin-left: 0px;
+    width: 100px;
   }
-`;
-
-export const FacebookLogo = styled.img`
-  padding: 28px;
-  width: 100px;
-
-  @media screen and (max-width: 600px) {
-    margin-right: 2px;
-    width: 50px;
-  }
-`;
-
-export const InstagramLogo = styled.img`
-  padding: 28px;
-  width: 100px;
-
-  @media screen and (max-width: 600px) {
-    margin-right: 2px;
-    width: 50px;
-  } 
 `;

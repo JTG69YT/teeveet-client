@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { version } from "../../../package.json"
 
 import { Wrapper, Content, LogoImg } from "./Footer.styles";
 
@@ -25,24 +26,32 @@ const Footer = () => {
           href="https://finnplace.ml"
           target="_blank"
           rel="noreferrer noopener"
-        >
+          >
           <span>FinnPlace</span>
+        </a>
+        <a
+          href="https://reactvideostream.ml"
+          target="_blank"
+          rel="noreferrer noopener"
+          >
+         <span>VideoStream</span>
         </a>
         <a
           href="https://thereactmoviedb.ml"
           target="_blank"
           rel="noreferrer noopener"
         >
-         <span>React Movie Database</span>
+         <span>RMDB</span>
         </a>
         <a
-          href="https://jesunmaailma.ml"
+          href="https://finnplace.ml/jesun-maailma-tili"
           target="_blank"
           rel="noreferrer noopener"
-        >
-          <span>Jesun Maailma</span>
+          >
+          <span>Jesun Maailma -tili</span>
         </a>
         <p>© 2021 Jesun Maailma</p>
+        <h5>Sovelluksen versio: {version}</h5>
       </Content>
     </Wrapper>
   );

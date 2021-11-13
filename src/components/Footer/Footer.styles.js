@@ -50,31 +50,9 @@ export const Content = styled.div`
 `;
 
 export const LogoImg = styled.img`
-  margin-left: 16px;
-  width: 130px;
+  width: 200px;
 
   @media screen and (max-width: 600px) {
-    margin-left: 2px;
-    width: 128px;
+    width: 150px;
   }
-`;
-
-export const FacebookLogo = styled.img`
-  padding: 28px;
-  width: 100px;
-
-  @media screen and (max-width: 600px) {
-    margin-right: 2px;
-    width: 50px;
-  }
-`;
-
-export const InstagramLogo = styled.img`
-  padding: 28px;
-  width: 100px;
-
-  @media screen and (max-width: 600px) {
-    margin-right: 2px;
-    width: 50px;
-  } 
 `;

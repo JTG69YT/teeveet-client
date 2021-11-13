@@ -66,7 +66,7 @@ export default function Register() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center" style={{ background: "var(--darkBlue)", color: "white" }}>
-        Onko sinulla jo tili? <Link to="/login" style={{
+        Onko sinulla jo tili? <Link to="/kirjaudu" style={{
           color: "white"
         }}>Kirjaudu sisään</Link>
       </div>
