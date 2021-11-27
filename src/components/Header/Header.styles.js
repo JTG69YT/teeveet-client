@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: var(--darkBlue);
+  transition: all 0.3s;
   padding: 20px 0;
 `;
 
@@ -12,6 +13,7 @@ export const Content = styled.div`
   max-width: var(--maxWidth);
   padding: 0 20px;
   margin: 0 auto;
+  transition: all 0.3s;
   color: var(--white);
 
   a {
@@ -41,7 +43,8 @@ export const Content = styled.div`
 
 export const LogoImg = styled.img`
   margin-left: 8px;
-  width: 128px;
+  width: 125px;
+  transition: all 0.3s;
 
   @media screen and (max-width: 600px) {
     margin-left: 0px;

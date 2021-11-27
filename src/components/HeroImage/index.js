@@ -4,8 +4,20 @@ import { Link } from "react-router-dom";
 // Styles
 import { Wrapper, Content, Text } from "./HeroImage.styles";
 
-const HeroImage = ({ image, title, text, liveUrl }) => (
-  <Link to={`/katso-kanavaa?name=${title}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}`}>
+const HeroImage = ({
+  image,
+  title,
+  text,
+  liveUrl,
+  facebookLink,
+  twitterLink,
+  youtubeLink,
+  instagramLink,
+  webLink,
+}) => (
+  <Link
+    to={`/katso-kanavaa?name=${title}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}&facebookLink=${facebookLink}&twitterLink=${twitterLink}&youtubeLink=${youtubeLink}&instagramLink=${instagramLink}&webLink=${webLink}`}
+  >
     <Wrapper image={image}>
       <Content>
         <Text>

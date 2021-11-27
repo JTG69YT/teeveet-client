@@ -115,7 +115,7 @@ const Dashboard = () => {
       </Modal>
 
       <Helmet>
-        <title>Kojelauta - Teeveet</title>
+        <title>Profiili - Teeveet</title>
       </Helmet>
       <Card
         className="text-center"
@@ -128,7 +128,9 @@ const Dashboard = () => {
         <Card.Body>
           <h2 className="text-center mb-4">Profiili</h2>
           {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Sähköposti:</strong> {currentUser.email}
+          <p>Olet kirjautunut tilillä<br /><strong style={{
+            color: "#00ccc2"
+          }}>{currentUser.email}</strong></p>
           <div className="w-100 text-center mt-3" style={{
             background: "var(--darkBlue)",
           }}>

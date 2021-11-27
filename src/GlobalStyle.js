@@ -19,26 +19,31 @@ export const GlobalStyle = createGlobalStyle`
         background: var(---darkBlue);
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
+        transition: all 0.3s;
     }
 
     body {
         margin: 0;
         padding: 0;
+        transition: all 0.3s;
         background: var(---darkBlue);
     
         h1 {
             font-size: 1.2rem;
             font-weight: 600;
+            transition: all 0.3s;
             color: var(--white);
         }
 
         h3 {
             font-size: 1.1rem;
             font-weight: 600;
+            transition: all 0.3s;
         }
 
         p {
             font-size: 1rem;
+            transition: all 0.3s;
             color: var(--white);
         }
   }

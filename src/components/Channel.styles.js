@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
+  transition: all 0.3s;
   animation: animateChannelInfo 1s;
 
   @keyframes animateChannelInfo {
@@ -24,6 +25,7 @@ export const Content = styled.div`
   max-width: var(--maxWidth);
   margin: 0 auto;
   background: var(--darkBlue);
+  transition: all 0.3s;
   border-radius: 20px;
 
   @media screen and (max-width: 768px) {
@@ -36,6 +38,7 @@ export const Text = styled.div`
   width: 100%;
   padding: 20px 40px;
   color: var(--white);
+  transition: all 0.3s;
   overflow: hidden;
 
   .homepage {
@@ -53,7 +56,128 @@ export const Text = styled.div`
 
   h1 {
     @media screen and (max-width: 768px) {
+      transition: all 0.3s;
       font-size: var(--fontBig);
+    }
+  }
+`;
+
+export const Facebook = styled.img`
+  width: 40px;
+  margin-right: 16px;
+  transition: all 0.3s;
+  animation: animateThumb 0.5s;
+
+  :hover {
+    opacity: .75;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 40px;
+  }
+
+  @keyframes animateThumb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const Twitter = styled.img`
+  width: 40px;
+  margin-right: 16px;
+  transition: all 0.3s;
+  animation: animateThumb 0.5s;
+
+  :hover {
+    opacity: .75;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+  }
+
+  @keyframes animateThumb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const YouTube = styled.img`
+  width: 40px;
+  margin-right: 16px;
+  transition: all 0.3s;
+  animation: animateThumb 0.5s;
+
+  :hover {
+    opacity: .75;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+  }
+
+  @keyframes animateThumb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const Instagram = styled.img`
+  width: 40px;
+  margin-right: 16px;
+  transition: all 0.3s;
+  animation: animateThumb 0.5s;
+
+  :hover {
+    opacity: .75;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+  }
+
+  @keyframes animateThumb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const Web = styled.img`
+  width: 40px;
+  margin-right: 16px;
+  transition: all 0.3s;
+  animation: animateThumb 0.5s;
+
+  :hover {
+    opacity: .75;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+  }
+
+  @keyframes animateThumb {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 `;

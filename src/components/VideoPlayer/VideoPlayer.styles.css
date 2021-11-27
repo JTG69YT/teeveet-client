@@ -1,10 +1,12 @@
 .player-wrapper {
   position: relative;
   aspect-ratio: 16 / 9;
+  transition: all 0.3s;
 }
 
 .react-player {
   position: absolute;
+  transition: all 0.3s;
   top: 0;
   left: 0;
 }

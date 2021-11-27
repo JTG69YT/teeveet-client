@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   background-position: center;
   height: 600px;
   position: relative;
+  transition: all 0.3s;
   animation: animateHeroImage 0.5s;
 
   @keyframes animateHeroImage {
@@ -26,6 +27,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   padding: 20px;
   max-width: var(--maxWidth);
+  transition: all 0.3s;
   margin: 0 auto;
 `;
 
@@ -36,6 +38,7 @@ export const Text = styled.div`
   bottom: 40px;
   margin-right: 20px;
   min-height: 100px;
+  transition: all 0.3s;
   color: var(--white);
 
   h1 {
