@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import ChannelsList from "./ChannelsList";
 import Thumb from "./Thumb";
 import HeroImage from "./HeroImage";
-import Spinner from "./Spinner"
+import Spinner from "./Spinner";
 
 // Hook
 import { useHomeFetch } from "../hooks/useHomeFetch";
@@ -14,12 +14,12 @@ const Home = () => {
   if (loading) {
     return (
       <>
-          <Helmet>
-              <title>Ladataan...</title>
-          </Helmet>
-          <Spinner />
+        <Helmet>
+          <title>Ladataan...</title>
+        </Helmet>
+        <Spinner />
       </>
-    )
+    );
   }
   if (error) return <div>Jotain meni pieleen...</div>;
 
@@ -54,6 +54,11 @@ const Home = () => {
             liveUrl={channel.live_url}
             name={channel.name}
             text={channel.description}
+            facebookLink={channel.facebook}
+            twitterLink={channel.twitter}
+            youtubeLink={channel.youtube}
+            instagramLink={channel.instagram}
+            webLink={channel.website}
           />
         ))}
       </ChannelsList>
