@@ -43,11 +43,11 @@ export const Content = styled.div`
 
 export const LogoImg = styled.img`
   margin-left: 8px;
-  width: 125px;
+  width: 150px;
   transition: all 0.3s;
 
   @media screen and (max-width: 600px) {
     margin-left: 0px;
-    width: 100px;
+    width: 125px;
   }
 `;
