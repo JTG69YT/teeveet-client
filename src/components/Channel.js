@@ -35,6 +35,8 @@ const Channel = () => {
   const instagramLink = searchParams.get("instagramLink");
   const webLink = searchParams.get("webLink");
 
+  window.history.replaceState({}, null, "/katso-kanavaa");
+
   const facebookImg = "https://jesunmaailma.ml/images/fb.png";
   const twitterImg = "https://jesunmaailma.ml/images/twt.png";
   const youtubeImg = "https://jesunmaailma.ml/images/yt.png";
