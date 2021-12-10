@@ -9,7 +9,7 @@ const BreadCrumb = ({ title }) => (
             <Link to="/">
                 <span>Koti</span>
             </Link>
-            <span>|</span>
+            <span>/</span>
             <span>{title}</span>
         </Content>
     </Wrapper>

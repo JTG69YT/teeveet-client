@@ -16,7 +16,23 @@ const HeroImage = ({
   webLink,
 }) => (
   <Link
-    to={`/katso-kanavaa?name=${title}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}&facebookLink=${facebookLink}&twitterLink=${twitterLink}&youtubeLink=${youtubeLink}&instagramLink=${instagramLink}&webLink=${webLink}`}
+    to={`/katso-kanavaa?name=${encodeURIComponent(
+      title
+    )}&liveUrl=${encodeURIComponent(
+      liveUrl
+    )}&imageUrl=${encodeURIComponent(
+      image
+    )}&description=${text}&facebookLink=${encodeURIComponent(
+      facebookLink
+    )}&twitterLink=${encodeURIComponent(
+      twitterLink
+    )}&youtubeLink=${encodeURIComponent(
+      youtubeLink
+    )}&instagramLink=${encodeURIComponent(
+      instagramLink
+    )}&webLink=${encodeURIComponent(
+      webLink
+    )}`}
   >
     <Wrapper image={image}>
       <Content>

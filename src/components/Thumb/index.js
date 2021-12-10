@@ -19,12 +19,23 @@ const Thumb = ({
   <div>
     {clickable ? (
       <Link
-        to={`/katso-kanavaa?name=${name}&liveUrl=${liveUrl}&imageUrl=${image}&description=${text}&facebookLink=${facebookLink}&twitterLink=${twitterLink}&youtubeLink=${youtubeLink}&instagramLink=${instagramLink}&webLink=${webLink}`}
+        to={`/katso-kanavaa?name=${name}&liveUrl=${encodeURIComponent(
+          liveUrl
+        )}&imageUrl=${encodeURIComponent(
+          image
+        )}&description=${text}&facebookLink=${encodeURIComponent(
+          facebookLink
+        )}&twitterLink=${encodeURIComponent(
+          twitterLink
+        )}&youtubeLink=${encodeURIComponent(
+          youtubeLink
+        )}&instagramLink=${encodeURIComponent(
+          instagramLink
+        )}&webLink=${encodeURIComponent(webLink)}`}
       >
         <Image
           src={image}
           alt="channel-thumb"
-          style={{ borderRadius: "16px" }}
         />
       </Link>
     ) : (
@@ -32,7 +43,6 @@ const Thumb = ({
         <Image
           src={image}
           alt="channel-thumb"
-          style={{ borderRadius: "16px" }}
         />
       </a>
     )}

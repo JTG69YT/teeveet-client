@@ -91,11 +91,11 @@ const Channel = () => {
               <a href={twitterLink} target="_blank" rel="noreferrer noopener">
                 <Twitter src={twitterImg} alt="twitter-logo" />
               </a>
-              <a href={youtubeLink} target="_blank" rel="noreferrer noopener">
-                <YouTube src={youtubeImg} alt="youtube-logo" />
-              </a>
               <a href={instagramLink} target="_blank" rel="noreferrer noopener">
                 <Instagram src={instagramImg} alt="instagram-logo" />
+              </a>
+              <a href={youtubeLink} target="_blank" rel="noreferrer noopener">
+                <YouTube src={youtubeImg} alt="youtube-logo" />
               </a>
               <a href={webLink} target="_blank" rel="noreferrer noopener">
                 <Web src={webImg} alt="web-logo" />
