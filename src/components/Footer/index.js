@@ -50,7 +50,7 @@ const Footer = () => {
           >
           <span>Jesun Maailma -tili</span>
         </a>
-        <p>© 2021 Jesun Maailma</p>
+        <p>© 2022 Jesun Maailma</p>
         <h5>Sovelluksen versio: {version}</h5>
       </Content>
     </Wrapper>
