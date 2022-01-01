@@ -37,13 +37,6 @@ const Footer = () => {
          <span>VideoStream</span>
         </a>
         <a
-          href="https://thereactmoviedb.ml"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-         <span>RMDB</span>
-        </a>
-        <a
           href="https://finnplace.ml/jesun-maailma-tili"
           target="_blank"
           rel="noreferrer noopener"
