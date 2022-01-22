@@ -11,7 +11,7 @@ const Footer = () => {
       <Content>
         <Link to="/">
           <LogoImg
-            src="https://jesunmaailma.ml/images/teeveet_logo.png"
+            src="https://jesunmaailma.ml/images/teeveet.svg"
             alt="teeveet-logo"
           />
         </Link>
