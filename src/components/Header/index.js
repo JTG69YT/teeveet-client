@@ -17,11 +17,11 @@ const Header = () => {
           />
         </Link>
         {currentUser ? (
-          <Link to={`/profiili`}>
-            <span>Profiili</span>
+          <Link to={`/account`}>
+            <span>Tili</span>
           </Link>
         ) : (
-          <Link to="/kirjaudu">
+          <Link to="/login">
             <span>Kirjaudu</span>
           </Link>
         )}

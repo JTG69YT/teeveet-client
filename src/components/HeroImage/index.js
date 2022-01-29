@@ -16,7 +16,7 @@ const HeroImage = ({
   webLink,
 }) => (
   <Link
-    to={`/katso-kanavaa?name=${encodeURIComponent(
+    to={`/watch?name=${encodeURIComponent(
       title
     )}&liveUrl=${encodeURIComponent(
       liveUrl

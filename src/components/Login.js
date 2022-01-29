@@ -48,12 +48,12 @@ export default function Login() {
               <Form.Label style={{ color: "white" }}>Salasana</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" style={{ background: "#00ccc2" }} type="submit">
+            <Button disabled={loading} className="w-100" style={{ background: "#02ccc6" }} type="submit">
               Kirjaudu
             </Button>
           </Form>
           <div className="w-100 text-center mt-2">
-            <Link to="/rekisteroidy" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
+            <Link to="/register" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
           </div>
         </Card.Body>
       </Card>

@@ -19,7 +19,7 @@ const Thumb = ({
   <div>
     {clickable ? (
       <Link
-        to={`/katso-kanavaa?name=${name}&liveUrl=${encodeURIComponent(
+        to={`/watch?name=${name}&liveUrl=${encodeURIComponent(
           liveUrl
         )}&imageUrl=${encodeURIComponent(
           image

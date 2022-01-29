@@ -21,7 +21,14 @@ const Home = () => {
       </>
     );
   }
-  if (error) return <div>Jotain meni pieleen...</div>;
+  if (error) return (
+    <>
+      <Helmet>
+        <title>Jokin meni vikaan</title>
+      </Helmet>
+      <div>Jokin meni vikaan...</div>
+    </>
+    );
 
   return (
     <>
