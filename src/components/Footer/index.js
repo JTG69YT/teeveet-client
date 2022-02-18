@@ -30,11 +30,11 @@ const Footer = () => {
           <span>FinnPlace</span>
         </a>
         <a
-          href="https://reactvideostream.ml"
+          href="https://reactvidplay.ml"
           target="_blank"
           rel="noreferrer noopener"
           >
-         <span>VideoStream</span>
+         <span>VidPlay</span>
         </a>
         <a
           href="https://finnplace.ml/jesun-maailma-tili"

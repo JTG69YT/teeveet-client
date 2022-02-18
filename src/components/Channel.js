@@ -78,7 +78,9 @@ const Channel = () => {
           />
           <Text>
             <h1>{name}</h1>
-            <p>{desc}</p>
+            <p style={{
+              whiteSpace: "pre"
+            }}>{desc}</p>
             <div
               className="d-flex align-items-center w-100"
               style={{

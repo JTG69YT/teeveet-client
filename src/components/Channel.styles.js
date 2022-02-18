@@ -160,7 +160,6 @@ export const Instagram = styled.img`
 
 export const Web = styled.img`
   width: 40px;
-  margin-right: 16px;
   transition: all 0.3s;
   animation: animateThumb 0.5s;
 

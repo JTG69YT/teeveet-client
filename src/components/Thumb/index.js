@@ -33,17 +33,11 @@ const Thumb = ({
           instagramLink
         )}&webLink=${encodeURIComponent(webLink)}`}
       >
-        <Image
-          src={image}
-          alt="channel-thumb"
-        />
+        <Image src={image} alt="channel-thumb" />
       </Link>
     ) : (
       <a href={image} target="_blank" rel="noreferrer noopener">
-        <Image
-          src={image}
-          alt="channel-thumb"
-        />
+        <Image src={image} alt="channel-thumb" />
       </a>
     )}
     <h4
@@ -55,7 +49,13 @@ const Thumb = ({
     >
       {name}
     </h4>
-    <p>{text}</p>
+    <p
+      style={{
+        whiteSpace: "pre",
+      }}
+    >
+      {text}
+    </p>
   </div>
 );
 
