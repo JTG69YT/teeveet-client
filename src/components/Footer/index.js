@@ -30,7 +30,7 @@ const Footer = () => {
           <span>FinnPlace</span>
         </a>
         <a
-          href="https://supliikki.ml"
+          href="https://www.supliikki.ml"
           target="_blank"
           rel="noreferrer noopener"
         >

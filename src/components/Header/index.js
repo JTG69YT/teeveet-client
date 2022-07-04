@@ -21,7 +21,7 @@ const Header = () => {
             <span>Tili</span>
           </Link>
         ) : (
-          <Link to="/login">
+          <Link to={`/login?redirect_to=/`}>
             <span>Kirjaudu</span>
           </Link>
         )}

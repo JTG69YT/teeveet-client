@@ -21,7 +21,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <PrivateRoute exact path="/watch" component={Channel} />
+        <PrivateRoute exact path="/channel/:channelId" component={Channel} />
         <PrivateRoute exact path="/account" component={Dashboard} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />

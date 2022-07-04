@@ -5,40 +5,19 @@ import { Link } from "react-router-dom";
 import { Wrapper, Content, Text } from "./HeroImage.styles";
 
 const HeroImage = ({
+  channelId,
   image,
   title,
-  text,
-  liveUrl,
-  facebookLink,
-  twitterLink,
-  youtubeLink,
-  instagramLink,
-  webLink,
+  description
 }) => (
   <Link
-    to={`/watch?name=${encodeURIComponent(
-      title
-    )}&liveUrl=${encodeURIComponent(
-      liveUrl
-    )}&imageUrl=${encodeURIComponent(
-      image
-    )}&description=${text}&facebookLink=${encodeURIComponent(
-      facebookLink
-    )}&twitterLink=${encodeURIComponent(
-      twitterLink
-    )}&youtubeLink=${encodeURIComponent(
-      youtubeLink
-    )}&instagramLink=${encodeURIComponent(
-      instagramLink
-    )}&webLink=${encodeURIComponent(
-      webLink
-    )}`}
+    to={`/channel/${channelId}`}
   >
     <Wrapper image={image}>
       <Content>
         <Text>
           <h1>{title}</h1>
-          <p>{text}</p>
+          <p>{description}</p>
         </Text>
       </Content>
     </Wrapper>
@@ -46,10 +25,10 @@ const HeroImage = ({
 );
 
 HeroImage.propTypes = {
+  channelId: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,
-  text: PropTypes.string,
-  liveUrl: PropTypes.string,
+  description: PropTypes.string
 };
 
 export default HeroImage;

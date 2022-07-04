@@ -3,17 +3,19 @@ import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 
 import { useAuth } from "../contexts/AuthContext";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 export default function Register() {
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+  const redirectUrl = searchParams.get("redirect_to");
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -26,7 +28,7 @@ export default function Register() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
+      window.location = redirectUrl
     } catch {
       setError("Rekisteröityminen epäonnistui");
     }
@@ -66,7 +68,7 @@ export default function Register() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center" style={{ background: "var(--darkBlue)", color: "white" }}>
-        Onko sinulla jo tili? <Link to="/login" style={{
+        Onko sinulla jo tili? <Link to="/login?redirect_to=/account" style={{
           color: "white"
         }}>Kirjaudu sisään</Link>
       </div>

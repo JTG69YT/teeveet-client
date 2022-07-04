@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: var(--maxWidth);
   margin: 0 auto;
@@ -55,6 +55,7 @@ export const Text = styled.div`
   }
 
   h1 {
+    font-size: 2em;
     @media screen and (max-width: 768px) {
       transition: all 0.3s;
       font-size: var(--fontBig);
@@ -69,7 +70,9 @@ export const Facebook = styled.img`
   animation: animateThumb 0.5s;
 
   :hover {
-    opacity: .75;
+    opacity: 0.75;
+    background-color: white;
+    border-radius: 40px;
   }
 
   @media screen and (max-width: 768px) {
@@ -93,7 +96,7 @@ export const Twitter = styled.img`
   animation: animateThumb 0.5s;
 
   :hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 
   @media screen and (max-width: 768px) {
@@ -117,7 +120,7 @@ export const YouTube = styled.img`
   animation: animateThumb 0.5s;
 
   :hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 
   @media screen and (max-width: 768px) {
@@ -141,7 +144,9 @@ export const Instagram = styled.img`
   animation: animateThumb 0.5s;
 
   :hover {
-    opacity: .75;
+    opacity: 0.75;
+    background-color: white;
+    border-radius: 10px;
   }
 
   @media screen and (max-width: 768px) {
@@ -164,7 +169,9 @@ export const Web = styled.img`
   animation: animateThumb 0.5s;
 
   :hover {
-    opacity: .75;
+    opacity: 0.75;
+    background-color: white;
+    border-radius: 40px;
   }
 
   @media screen and (max-width: 768px) {

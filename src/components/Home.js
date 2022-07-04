@@ -37,35 +37,25 @@ const Home = () => {
       </Helmet>
       {!loading && channel[0] ? (
         <HeroImage
+          channelId={channel[0].id}
           title={channel[0].name}
-          text={channel[0].description}
-          liveUrl={channel[0].live_url}
+          description={channel[0].description}
           image={`${channel[0].thumbnail}`}
-          facebookLink={channel[0].facebook}
-          twitterLink={channel[0].twitter}
-          youtubeLink={channel[0].youtube}
-          instagramLink={channel[0].instagram}
-          webLink={channel[0].website}
         />
       ) : null}
-      <ChannelsList header={"Kaikki kanavat"}>
+      <ChannelsList header={"Kanavat"}>
         {channel.map((channel) => (
           <Thumb
             key={channel.id}
             clickable
+            channelId={channel.id}
+            name={channel.name}
+            description={channel.description}
             image={
               channel.thumbnail
                 ? channel.thumbnail
                 : "https://jesunmaailma.ml/images/no_image.jpg"
             }
-            liveUrl={channel.live_url}
-            name={channel.name}
-            text={channel.description}
-            facebookLink={channel.facebook}
-            twitterLink={channel.twitter}
-            youtubeLink={channel.youtube}
-            instagramLink={channel.instagram}
-            webLink={channel.website}
           />
         ))}
       </ChannelsList>

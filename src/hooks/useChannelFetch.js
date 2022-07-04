@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import API from "../API";
 
-export const useChannelFetch = () => {
+export const useChannelFetch = (channelId) => {
   const [state, setState] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -11,7 +11,7 @@ export const useChannelFetch = () => {
       setLoading(true);
       setError(false);
 
-      const channel = await API.fetchChannels();
+      const channel = await API.fetchChannel(channelId);
 
       setState(channel)
     } catch (error) {
@@ -22,7 +22,7 @@ export const useChannelFetch = () => {
 
   useEffect(() => {
     fetchChannel();
-  }, []);
+  }, [channelId]);
 
   return { state, loading, error };
 };

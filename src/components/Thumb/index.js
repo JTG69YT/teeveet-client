@@ -5,40 +5,21 @@ import { Link } from "react-router-dom";
 import { Image } from "./Thumb.styles";
 
 const Thumb = ({
+  channelId,
   name,
-  liveUrl,
   image,
   clickable,
-  text,
-  facebookLink,
-  twitterLink,
-  youtubeLink,
-  instagramLink,
-  webLink,
+  description,
 }) => (
   <div>
     {clickable ? (
       <Link
-        to={`/watch?name=${name}&liveUrl=${encodeURIComponent(
-          liveUrl
-        )}&imageUrl=${encodeURIComponent(
-          image
-        )}&description=${text}&facebookLink=${encodeURIComponent(
-          facebookLink
-        )}&twitterLink=${encodeURIComponent(
-          twitterLink
-        )}&youtubeLink=${encodeURIComponent(
-          youtubeLink
-        )}&instagramLink=${encodeURIComponent(
-          instagramLink
-        )}&webLink=${encodeURIComponent(webLink)}`}
+        to={`/channel/${channelId}`}
       >
         <Image src={image} alt="channel-thumb" />
       </Link>
     ) : (
-      <a href={image} target="_blank" rel="noreferrer noopener">
-        <Image src={image} alt="channel-thumb" />
-      </a>
+      <Image src={image} alt="channel-thumb" />
     )}
     <h4
       className="mt-3"
@@ -54,16 +35,16 @@ const Thumb = ({
         whiteSpace: "pre",
       }}
     >
-      {text}
+      {description}
     </p>
   </div>
 );
 
 Thumb.propTypes = {
+  channelId: PropTypes.string,
   name: PropTypes.string,
   image: PropTypes.string,
-  liveUrl: PropTypes.string,
-  text: PropTypes.string,
+  description: PropTypes.string,
   clickable: PropTypes.bool,
 };
 

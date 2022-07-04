@@ -1,16 +1,18 @@
 import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 export default function Login() {
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+  const redirectUrl = searchParams.get("redirect_to")
   const emailRef = useRef();
   const passwordRef = useRef();
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -19,7 +21,7 @@ export default function Login() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
+      window.location = redirectUrl
     } catch {
       setError("Kirjautuminen epäonnistui");
     }
@@ -53,7 +55,7 @@ export default function Login() {
             </Button>
           </Form>
           <div className="w-100 text-center mt-2">
-            <Link to="/register" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
+            <Link to="/register?redirect_to=/account" style={{ color: "white" }}>Ei tunnusta? Luo Jesun Maailma -tili</Link>
           </div>
         </Card.Body>
       </Card>
